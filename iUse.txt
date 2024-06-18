@@ -6,3 +6,4 @@ for of -> for strings and arrays
 
 
 strings are immutable in Js
+parseInt('string') gives NaN in Js
