@@ -40,6 +40,8 @@ console.log(g)
 let d = b.concat(' is ',a, ' bhai')         // is same as let d = b+' is ' + a + 'bhai'
 console.log(d)
 
+
+
 // 7 TRIM
 
 let e = '    hello     my name is Amrit      '
