@@ -1,0 +1,5 @@
+use 'mdn' to search about js in google
+
+for -> simple for loop
+for in -> keys of dictationary 
+for of -> for strings and arrays
