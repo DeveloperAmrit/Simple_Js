@@ -10,3 +10,8 @@ parseInt('string') gives NaN in Js
 
 arrays are mutable in Js
 type of arrays = object
+
+Advantages of using script from diffrent file
+
+   1) Seperation of concerns 
+   2) Browser caching    
