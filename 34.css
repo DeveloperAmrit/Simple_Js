@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bodybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btns_css_g1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    border: black 2px solid;
+
+}
+
+.btns_js_g1:hover {
+    cursor: pointer;
+    background-color: cyan;
+}
+
+.message {
+    size: 20px;
+    font-weight: 400;
+}
