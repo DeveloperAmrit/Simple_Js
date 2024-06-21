@@ -6,12 +6,31 @@
     <title>Children</title>
 </head>
 <body>
-    <div>
-        <p>Para 1</p>
+    <!--This space is the first child of body , a text node-->      
+    <div id="div"><p>Para 1</p>
+    <!--         ^ no gap so p is the first child of div -->
+    <!-- This gap is second child of div -->
         <span>Para 2</span>
     </div>
 </body>
 </html>
+
+<script>
+    // accessing first child
+    console.log(document.body.firstChild)  
+
+    // accessing last child
+    console.log(document.body.lastChild)  
+
+    // accessing all child
+    console.log(document.body.childNodes)
+
+    // Without gap 
+    console.log(document.getElementById('div').firstChild)
+
+    // checking whether has child nodes or not
+    console.log(document.hasChildNodes())    // true, false
+</script>
 
 <!-- 
 
@@ -21,4 +40,6 @@ p is son of div
 
 p and span are siblings
 
+descendent nodes = children and their children and their children...
+empty spaces, comments , script tags all are counted in children
 -->
