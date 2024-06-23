@@ -13,3 +13,5 @@ console.table(obj)                  // very useful
 
 console.time('starttag1')            // Tells the time taken from time to timeEnd for the same tag
 console.timeEnd('starttag1')
+
+console.dir('HTML Element')         // used with DOM, shows html element with its properties   
