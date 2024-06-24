@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods of Attributes</title>
+</head>
+<body>
+    <div class="g1" id="g1_1">Hello world</div>
+    <div class="g1" id="g1_2">Hey this is a div</div>
+</body>
+</html>
+
+<script>
+    let a = document.body.children[0]
+    let b = document.body.children[1]
+
+    // get set remove
+
+    console.log('1',a.getAttribute('class'))                       // get the value of given attribute in HTML element tag
+    console.log('2',a.setAttribute('style','background: red'))     // (name of attribute,value)
+    console.log('3',a.removeAttribute('id'))                       // remove                      
+
+    console.log('4',a.hasAttribute('style'))                       // returns boolean
+    console.log('5',a.attributes)
+
+    console.log('6',a.attributes.class)
+
+
+</script>

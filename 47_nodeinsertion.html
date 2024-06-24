@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node insertion</title>
+    <style>
+        .container{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="container">
+        <hr>
+    </div>
+    <hr>
+</body>
+</html>
+
+<script>
+    let container = document.getElementsByClassName('container')[0]
+
+    // innerHTML
+
+    container.innerHTML = '<i> This is inserted by .innerHTML property </i>'
+    
+    // good methods {can use for loop with these}
+
+    let div = document.createElement('div')
+    div.innerText = 'Hey this is created and inserted by js'
+
+    container.append(div)
+    container.prepend(div)
+    container.after(div)
+    container.before(div)                  // PROBLEM : only the last one will work
+    
+    /*
+    1) node.append(div) -> adds at the end of node
+    2) node.prepend(div) -> insert at the starting of node
+    3) node.before(div)  -> insert before node
+    4) node.after(div)   -> insert after node
+    5) node.replaceWith(div) -> replaces node with given element
+    */
+    
+</script>
