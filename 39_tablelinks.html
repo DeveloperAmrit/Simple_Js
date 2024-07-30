@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table links</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <caption>Table of legends</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
+<script>
+    let t = document.body.firstElementChild.firstElementChild
+
+    console.log('1',t)
+    console.log('2',t.rows)
+    // console.log('3',t.columns)    DOES NOT EXIST
+    console.log('4',t.caption)
+    console.log('5',t.tHead)
+    console.log('6',t.tFoot)
+    console.log('7',t.tBodies)
+    
+    let tr1 = t.rows[0]
+
+    console.log('8',tr1.cells)                  // Collection of cells
+    console.log('9',tr1.sectionRowIndex)        // returns index of this row element in enclosing parent tag's child elements
+    console.log('10',tr1.rowIndex)              // returns row index of this row
+
+    let td1 = tr1.cells[1]
+
+    console.log('11',td1.cellIndex)            
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

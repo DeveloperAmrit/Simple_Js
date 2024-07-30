@@ -1,0 +1,27 @@
+use 'mdn' to search about js in google
+
+for -> simple for loop
+for in -> keys of dictationary 
+for of -> for strings and arrays
+
+
+strings are immutable in Js
+parseInt('string') gives NaN in Js
+
+arrays are mutable in Js
+type of arrays = object
+
+Advantages of using script from diffrent file
+
+   1) Seperation of concerns 
+   2) Browser caching    
+
+Access returned {} objects with .
+e.g -> console.log(a.attributes.class)
+
+For inserting html 
+use 47 with for loop
+use 48 normally
+
+
+-----> LEARN SCSS language

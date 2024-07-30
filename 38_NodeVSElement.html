@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node v/s Element</title>
+</head>
+<body>
+    <div>Hello world</div>
+    <p id="para1"> This is para 1 <span>This is inside span</span></p>
+</body>
+</html>
+
+<script>
+
+    // NODES
+    console.log('1',document.body.firstChild)
+    console.log('2',document.body.lastChild)
+    console.log('3',document.body.childNodes)
+
+    console.log('4',document.body.nextSibling)
+    console.log('5',document.body.previousSibling)
+
+    //ELEMENTS
+    console.log('6',document.body.firstElementChild)
+    console.log('7',document.body.lastElementChild)
+    console.log('8',document.body.children)
+
+    console.log('9',document.body.nextElementSibling)
+    console.log('10',document.body.previousElementSibling)
+</script>
+
+<!-- NODE
+
+Any space , text is text node
+Any commeent is comment node
+Any element is element node
+-->
+
+<!-- ELEMENT
+
+Only HTML valid elements are seen
+
+Called "Element only navigation"
+-->

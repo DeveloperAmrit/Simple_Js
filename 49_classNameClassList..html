@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Name and Class List</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="first red" id="haloid">
+        <span id="span1">Hey I am good</span>
+    </div>
+</body>
+</html>
+
+<script>
+    let first = document.getElementsByClassName('first')[0]
+
+    console.log(first.className)
+    console.log(first.classList[0],first.classList[1],'\n',first.classList)
+    console.log(first.id)
+
+    first.classList.remove('red')
+    first.classList.add('yellow')
+
+    // first.classList.toggle('yellow')    // Lagi hai to hata dega, nahi lagi hai toh lga dega
+</script>

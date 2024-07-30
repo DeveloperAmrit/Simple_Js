@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macthes Closet Conatains methods</title>
+</head>
+<body>
+    <div class="g1 box" id="id1">This is element 1 <span id="span1">This is span</span></div>
+    <div class="g1" id="id2">This is element 2 </div>
+</body>
+</html>
+
+<script>
+    let id1 = document.getElementById('id1')
+    let id2 = document.getElementById('id2')
+    let span1 = document.getElementById('span1')
+
+    console.log(id1.matches('.box'))           // check wheter element satisfies the css selector or not  RETURNS: boolean
+    console.log(id2.matches('.box'))
+
+    console.log(span1.closest('.box'))         // looks for nearest ansector (including self) having that css selector  RETURNS : html element
+
+    console.log(id1.contains(span1))           // checks whether given node is inside of id1 or not
+    console.log(id1.contains(id1))             // self (contains self) is true
+
+</script>

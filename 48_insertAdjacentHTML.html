@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Adjacent HTML</title>
+    <style>
+        .container{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="container">
+        <hr>
+    </div>
+    <hr>
+</body>
+</html>
+
+<script>
+    let container = document.getElementsByClassName('container')[0]
+
+    container.insertAdjacentHTML("beforebegin",'<i>This is inserted before begin')
+    container.insertAdjacentHTML("afterbegin",'<i>This is inserted after begin')
+    container.insertAdjacentHTML("beforeend",'<i>This is inserted before end')
+    container.insertAdjacentHTML("afterend",'<i>This is inserted after end')
+
+    // container.remove()   // Removes whole element conatiner
+</script>

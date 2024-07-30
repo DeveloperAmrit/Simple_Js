@@ -1,0 +1,14 @@
+#btn_box{
+    display: flex;
+    flex-direction: column;
+}
+#bulb{
+    height: 4vh;
+    width: 2vw;
+    border: 2px solid gold ;
+    border-radius: 100%;
+
+}
+.bulbOn{
+    background-color: yellow;
+}

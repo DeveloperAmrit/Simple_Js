@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML Outer HTML</title>
+</head>
+<body><!--This is a comment-->
+    <span>Hey This is a span</span>
+    <span id="hide">This is a hidden</span>
+</body>
+</html>
+
+<script>
+    console.dir(document.getElementsByTagName('span')[0])
+
+    // valid only for element nodes
+
+    console.log('1',document.body.innerHTML)
+    console.log('2',document.body.outerHTML)        // outer HTML = inner HTML + self
+
+    
+    // for all nodes 
+    
+    console.log('3',document.head.textContent)                        // (inside html - html tags) replaces tags by spaces 
+    console.log('4',document.body.firstChild.nodeValue)
+    console.log('5',document.body.firstChild.data)                    // can be used to read comments
+
+    // hidden attribute
+    document.getElementById('hide').hidden = true
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call backs</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // synchronous actions
+    console.log('Hello')                    // will run first
+    console.log('World')                    // will run second
+
+    // asynchronous actions
+    console.log('start')
+    setTimeout(() => {
+        console.log('This is from set time out')              // will initiate now and run later
+    }, 2000);
+    console.log('end BUT will run before function in setTimeOut')
+
+</script>

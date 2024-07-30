@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents</title>
+</head><body>
+    
+</body>
+</html>
+<script>
+    document.documentElement = '<HTML>Halo re</HTML>'    // will NOT change HTML 
+
+    // accessing previous/left sibling
+    console.log(document.body.previousSibling)
+    
+    // accessing next/right sibling
+    console.log(document.head.nextSibling)
+
+    // Accessing Parent 
+    console.log(document.body.parentNode)
+
+</script>
+
+<!-- 
+SIBLINGS : 
+
+siblings are children of same parent
+body is next/right sibling of head
+head is previous/left sibling of body
+-->
+
+
+<!-- DOM collections are Read-only, you cannot change them -->
+<!--BROWSER AUTO CORRECTION : Shifts outside the body content at end of body e.g this commenet-->

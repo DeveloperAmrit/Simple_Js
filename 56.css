@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --clocksize : 20vw;
+}
+.boxa{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+.boxb{
+    border: calc(var(--clocksize)/10) solid black;
+    overflow: visible;
+    height: var(--clocksize);
+    width: var(--clocksize);
+    border-radius: 100%;
+}
+.boxc{
+    /* border: 2px solid red; */
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: var(--clocksize);
+    width: var(--clocksize);
+}
+.boxd1{
+    /* border: 2px solid red; */
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: var(--clocksize);
+    width: var(--clocksize);
+    position: absolute;
+    z-index: 1;
+}
+.boxe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(var(--clocksize));
+    position: absolute;
+    /* border: 2px solid blue; */
+    padding-top: calc(var(--clocksize)/100);
+    font-size: calc(var(--clocksize)/10);
+}
+.boxd2{
+    height: calc(var(--clocksize));
+    width: calc(var(--clocksize)/10);
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 2;
+}
+.boxe2{
+    height: calc(var(--clocksize));
+    width: calc(var(--clocksize)/10);
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 2;
+}
+.boxf3{
+    height: calc(var(--clocksize)/2);
+    width: calc(var(--clocksize)/10);
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+}
+.hourhand{
+    height: calc(var(--clocksize)/4);
+    width: calc(var(--clocksize)/10);
+    background-color: black;
+    /* border: 0.2vw double gold; */
+}
+.hourhandtip{
+    clip-path: polygon(50% 0, 50% 0,0 100%, 100% 100%);
+    height: calc(var(--clocksize)/20);
+    width: calc(var(--clocksize)/10);
+    background-color: black;
+}
+.minutehand{
+    height: calc(var(--clocksize)*2/5);
+    width: calc(var(--clocksize)*7/100);
+    background-color: #4A4745;
+}
+.minutehandtip{
+    clip-path: polygon(50% 0, 50% 0,0 100%, 100% 100%);
+    height: calc(var(--clocksize)/20);
+    width: calc(var(--clocksize)*7/100);
+    background-color: #4A4745;
+}
+.secondhand{
+    height: calc(var(--clocksize)*9/20);
+    width: calc(var(--clocksize)/100);
+    background-color: rgb(230, 23, 23);
+}
+.boxd3{
+    width: calc(var(--clocksize)/10);
+    height: calc(var(--clocksize)/10);
+    background-color: yellow;
+    border-radius: 100%;
+    border: calc(var(--clocksize)/100) solid black;
+    position: absolute;
+    z-index: 3;
+}
+.boxb2{
+    font-size: 2vw;
+}

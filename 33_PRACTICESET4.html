@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE SET 4</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+// 1 , 2 , 3
+
+function canDrive(){
+    do{
+        let age = parseInt(prompt('Enter your age'))
+        if(age<0){
+            alert('Invalid age')
+        }
+        else if(age<18){
+            alert('You cannot drive')
+        }
+        else{
+            alert('You can drive')
+            location.href = 'https://en.wikipedia.org/wiki/Driving'
+            break
+        }
+    }while(confirm('Do you want to see the prompt again'))
+
+}
+// canDrive()
+
+function changeBackgroundColor(){
+    let a = prompt('Enter color name')
+    document.body.style.background = a
+}
+changeBackgroundColor()
+</script>

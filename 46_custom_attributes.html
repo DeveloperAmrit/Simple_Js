@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Attributes</title>
+</head>
+<body>
+    <!-- A custom attribute must be of standard fomat data-name -->
+    <div class="g1" id="first" data-game="mario" data-player="amrit"></div>
+</body>
+</html>
+
+<script>
+
+    let first = document.getElementById('first')
+    
+    // Accessing custom attributes
+
+    console.log(first.dataset)
+    console.log(first.dataset.game)
+    console.log(first.dataset.player)
+</script>

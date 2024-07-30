@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    max-width: 100%;
+}
+
+.btn_g1{
+    max-width: 200px;
+    height: 40px;
+    background-color: rgb(64, 111, 173);
+    font-size: large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 2px white solid;
+}
+.btn_g1:hover{
+    cursor: pointer;
+    border-color: cyan;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.text_box{
+    font-size: 25px;
+    text-align: left;
+}
+
