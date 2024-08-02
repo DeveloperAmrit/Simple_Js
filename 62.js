@@ -1,6 +1,6 @@
 // (1) No need to call promise
 
-let p1 = new Promise((resolve,reject)=>{
+let p2 = new Promise((resolve,reject)=>{
     console.log('1','I am a promise')                 
 })
 
