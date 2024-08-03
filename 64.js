@@ -16,4 +16,5 @@ p1.then((value)=>{                             // .then() for p1
     return p2
 }).then((value)=>{                         // .then() for p2
     console.log(value)       
-})
+})   
+
