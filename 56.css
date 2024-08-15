@@ -117,7 +117,7 @@ body{
     height: calc(var(--clocksize)/10);
     background-color: yellow;
     border-radius: 100%;
-    border: calc(var(--clocksize)/100) solid black;
+    border: calc(var(--clocksize)/100) solid rgb(230, 23, 23);
     position: absolute;
     z-index: 3;
 }
