@@ -31,7 +31,8 @@ const boxb2 = document.getElementsByClassName('boxb2')[0]
 function formatAMPM(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let seconds = date.getSeconds()
+    let seconds = date.getSeconds();
+    let date_ = date.toDateString();
 
     if((hours>=4)&&(hours<=18)){
         center_dot.style.background = 'yellow'
@@ -50,12 +51,14 @@ function formatAMPM(date) {
     minutehand.style.transform = `rotate(${minutes*6}deg)`
     secondhand.style.transform = `rotate(${seconds*6}deg)`
 
-    let strTime = hours + ':' + minutes + ':'+ seconds +' ' + ampm;
+    // let strTime = hours + ':' + minutes + ':'+ seconds +' ' + ampm + '\n' + date + '|' 
+    let strTime = `<div>${hours}:${minutes}:${seconds} ${ampm}</div><div>${date_}</div>`
 
-    boxb2.innerText = strTime
+    boxb2.innerHTML = strTime
     return strTime;
   }
-  
+
+formatAMPM(new Date)
 setInterval(()=>{
     formatAMPM(new Date)
 },1000)
