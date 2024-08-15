@@ -52,7 +52,7 @@ function formatAMPM(date) {
     secondhand.style.transform = `rotate(${seconds*6}deg)`
 
     // let strTime = hours + ':' + minutes + ':'+ seconds +' ' + ampm + '\n' + date + '|' 
-    let strTime = `<div>${hours}:${minutes}:${seconds} ${ampm}</div><div>${date_}</div>`
+    let strTime = `<div>${hours}:${minutes}:${seconds} ${ampm}</div>`
 
     boxb2.innerHTML = strTime
     return strTime;
