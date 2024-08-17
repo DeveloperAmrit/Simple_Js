@@ -1,1 +1,0 @@
-console.log(`The area of rectangle is ${parseInt(prompt('Enter length\n'))*parseInt(prompt('Enter width\n'))}`)
