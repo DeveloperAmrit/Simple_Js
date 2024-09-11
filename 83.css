@@ -2,9 +2,10 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
+    color: lightgreen;
 }
 .main_body{
-    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/hackerman1.png);
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/hackerman1.png);
     background-repeat: no-repeat;
     background-position: center center;
     max-width: 100%;;
@@ -45,17 +46,88 @@ body{
 
 .centre_box div{
     border: 2px solid red;
-    width: 100%;
 }
 
 .centre_box .banner{
-    height: 10vh;
-    color: white;
+    height: 8vh;
+    color: lightgreen;
     font-size: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.centre_box .screen{
+    width: 100%;
+    height: 30vh;
+    color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.screen_text_box{
+    width: 90% !important;
+    height: 29vh;
+    border: 2px solid blue !important;
+}
+.option_box{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3vh;
+    text-align: center;
+}
+.button_box{
+    width: 100%;
+    height: 8vh;
+}
+.console{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.console_text_box{
+    width: 90% !important;
+    height: 19vh;
+    border: 2px solid blue !important;
 
+}
 
+/* options small boxes */
+.option_small_box{
+    background-color: lightgreen;    
+    color: black;
+    padding: 4px 4px ;
+}
 
+.option_small_box:hover{
+    cursor: pointer;
+    background-color: green;
+}
+/* Hack button */
+.button_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hack_btn{
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    background-color: lightgreen;
+    color: black;
+}
+
+.hack_btn:hover{
+    cursor: pointer;
+    background-color: green;
+}
