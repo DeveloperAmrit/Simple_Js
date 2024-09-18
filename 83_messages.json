@@ -1,0 +1,50 @@
+{
+    "facebook": [
+        "Initializing Facebook hack...",
+        "Connecting to Facebook servers...",
+        "Bypassing security protocols...",
+        "Accessing user profiles...",
+        "Analyzing account activity...",
+        "Decrypting user data...",
+        "Extracting Facebook friends list...",
+        "Downloading user photos...",
+        "Compiling data for analysis...",
+        "Facebook hack complete. Data retrieved successfully."
+    ],
+    "instagram": [
+        "Starting Instagram breach...",
+        "Establishing connection with Instagram servers...",
+        "Decrypting access credentials...",
+        "Retrieving user activity logs...",
+        "Scanning for private posts...",
+        "Extracting user profiles and followers...",
+        "Accessing Instagram stories...",
+        "Downloading user media files...",
+        "Analyzing user interactions...",
+        "Instagram data extraction complete and secured."
+    ],
+    "twitter": [
+        "Launching Twitter penetration...",
+        "Connecting to Twitter API...",
+        "Scanning for vulnerabilities...",
+        "Accessing user tweets and data...",
+        "Retrieving follower lists...",
+        "Extracting direct messages...",
+        "Analyzing recent tweet patterns...",
+        "Fetching trending topics...",
+        "Compiling user statistics...",
+        "Twitter data extraction successful. All targets covered."
+    ],
+    "whatsapp": [
+        "Beginning WhatsApp infiltration...",
+        "Connecting to WhatsApp database...",
+        "Bypassing encryption protocols...",
+        "Retrieving message history...",
+        "Accessing group chat data...",
+        "Decrypting message content...",
+        "Extracting user contacts...",
+        "Analyzing message metadata...",
+        "Downloading multimedia files...",
+        "WhatsApp data access complete. Extraction successful."
+    ]
+}

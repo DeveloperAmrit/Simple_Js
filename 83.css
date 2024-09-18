@@ -70,6 +70,7 @@ body{
     width: 90% !important;
     height: 29vh;
     border: 2px solid blue !important;
+    overflow-y: scroll;
 }
 .option_box{
     width: 100%;
