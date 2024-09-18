@@ -33,6 +33,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    white-space: pre-wrap;
 }
 .centre_box{
     width: 45vw;
@@ -108,7 +109,6 @@ body{
 
 .option_small_box:hover{
     cursor: pointer;
-    background-color: green;
 }
 /* Hack button */
 .button_box{
@@ -129,5 +129,16 @@ body{
 
 .hack_btn:hover{
     cursor: pointer;
+}
+
+/* For JS */
+
+.selected{
     background-color: green;
+}
+
+.hidden-text {
+    visibility: hidden; 
+    position: absolute; 
+    white-space: nowrap;
 }

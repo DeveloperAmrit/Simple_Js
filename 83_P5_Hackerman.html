@@ -14,19 +14,21 @@
                 <div class="banner">Hackerman</div>
                 <div class="screen"><div class="screen_text_box">IUYEWI</div></div>
                 <div class="option_box">
-                    <button class="option_small_box">Facebook</button>
-                    <button class="option_small_box">Instagram</button>
-                    <button class="option_small_box">Twitter</button>
-                    <button class="option_small_box">Whatsapp</button>
+                    <button class="option_small_box options" onclick="toggleOption(this)">Facebook</button>
+                    <button class="option_small_box options" onclick="toggleOption(this)">Instagram</button>
+                    <button class="option_small_box options" onclick="toggleOption(this)">Twitter</button>
+                    <button class="option_small_box options" onclick="toggleOption(this)">Whatsapp</button>
                 </div>
                 <div class="button_box">
-                    <button class="hack_btn">Hack</button>
+                    <button class="hack_btn" onclick="handleHackClick(this)">Hack</button>
                 </div>
                 <div class="console"><div class="console_text_box">Halo</div></div>
             </div>
             <div class="side_box" id="box3"></div>
         </div>
     </div>
+    <!-- For JS use -->
+    <div id="hidden-text" class="hidden-text"></div>
 </body>
 </html>
 <script src="83.js"></script>
