@@ -10,7 +10,7 @@ body{
     background-position: center center;
     max-width: 100%;;
     height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,31 +23,31 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .side_box{
     width: 19vw;
     height: 80vh;
-    border: 2px solid blue;
+    border: 2px solid grey;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     white-space: pre-wrap;
+    overflow: hidden;
 }
 .centre_box{
     width: 45vw;
     height: 80vh;
-    border: 2px solid yellow;
+    border: 2px solid grey;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
 }
 
-.centre_box div{
-    border: 2px solid red;
-}
 
 .centre_box .banner{
     height: 8vh;
@@ -69,7 +69,7 @@ body{
 .screen_text_box{
     width: 90% !important;
     height: 29vh;
-    border: 2px solid blue !important;
+    border: 2px solid grey !important;
     overflow-y: scroll;
 }
 .option_box{
@@ -81,10 +81,12 @@ body{
     align-items: center;
     font-size: 3vh;
     text-align: center;
+    border: 2px solid grey;
 }
 .button_box{
     width: 100%;
     height: 8vh;
+    border: 2px solid grey;
 }
 .console{
     width: 100%;
@@ -97,7 +99,7 @@ body{
 .console_text_box{
     width: 90% !important;
     height: 19vh;
-    border: 2px solid blue !important;
+    border: 2px solid transparent !important;
 
 }
 

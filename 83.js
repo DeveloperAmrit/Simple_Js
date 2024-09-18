@@ -1,7 +1,9 @@
 let side_boxes = document.getElementsByClassName('side_box')
 let buttons = document.getElementsByClassName('options')
 let messageDiv = document.getElementById('screen_text_box')
+let hackbtn = document.getElementById('hack_btn')
 
+// written by chatGPT
 const breakTextByWidth = (longText, container) => {
     const hiddenText = document.getElementById('hidden-text');
     const containerWidth = container.clientWidth;
@@ -18,37 +20,36 @@ const breakTextByWidth = (longText, container) => {
         }
     }
 
-    // Add the last part of the line to resultText
     resultText += currentLine;
     container.innerText = resultText;
 };
 
-const changeSideBox = (a) =>{
-    for(let i=0;i<side_boxes.length;i++){
-        let longtext = (a==1)? Array.from({ length: 1000 }, () => Math.floor(Math.random() * 2)).join("") : '';
-        breakTextByWidth(longtext,side_boxes[i])
+const changeSideBox = (a) => {
+    for (let i = 0; i < side_boxes.length; i++) {
+        let longtext = (a == 1) ? Array.from({ length: 1500 }, () => Math.floor(Math.random() * 2)).join("") : '';
+        breakTextByWidth(longtext, side_boxes[i])
     }
 }
 
 const toggleDisable = () => {
-    for(let i = 0; i < buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = !buttons[i].disabled;
     }
 };
 
 let options_selected = []
-const toggleOption = (element)=>{
-    if(element.classList.contains('selected')){
+const toggleOption = (element) => {
+    if (element.classList.contains('selected')) {
         element.classList.remove('selected')
         options_selected.pop(element.textContent.toLowerCase());
-    }
-    else{
+    } else {
         element.classList.add('selected')
         options_selected.push(element.textContent.toLowerCase());
     }
     console.log(options_selected)
 }
 
+// written by chatGPT
 async function fetchJson(fileName) {
     try {
         const response = await fetch(fileName);
@@ -67,7 +68,7 @@ let messagesData = {};
     messagesData = await fetchJson('83_messages.json');
 })();
 
-
+// written by chatGPT
 const displayMessages = async () => {
     let allMessages = [];
 
@@ -78,36 +79,44 @@ const displayMessages = async () => {
     });
 
     if (allMessages.length > 0) {
-        messageDiv.innerText = ''; // Clear previous messages
-        showMessagesWithDelay(allMessages, 0);
+        messageDiv.innerText = '';
+        await showMessagesWithDelay(allMessages, 0);
     } else {
         messageDiv.innerText = 'No options selected. Please select at least one option.';
     }
+    clearInterval(interval);
+    changeSideBox(0);
+    toggleDisable();
+    hackbtn.disabled = false;
+    hackbtn.classList.remove('selected');
+    options_selected = [];
 };
 
-const showMessagesWithDelay = async (messages, index) => {
-    if (index < messages.length) {
-        let p1 = new Promise((resolve,reject)=>{
+// written by chatGPT
+const showMessagesWithDelay = (messages, index) => {
+    return new Promise((resolve) => {
+        if (index < messages.length) {
             messageDiv.innerText += messages[index] + '\n';
-            const randomDelay = Math.random() * 2000; // Random delay up to 2 seconds
+            const randomDelay = Math.random() * 2000;
             messageDiv.scrollTop = messageDiv.scrollHeight;
-            setTimeout(() => showMessagesWithDelay(messages, index + 1), randomDelay);
-        })
-        let a = await p1;
-        console.log('')
-        return p1;
-    }
-};
 
+            setTimeout(() => {
+                showMessagesWithDelay(messages, index + 1).then(resolve);
+            }, randomDelay);
+        } else {
+            resolve();
+        }
+    });
+};
 
 let interval;
-const handleHackClick = async(element) =>{
-
-    element.classList.add('selected')
-    element.disabled = true
+const handleHackClick = async (element) => {
+    element.classList.add('selected');
+    element.disabled = true;
     toggleDisable();
-    changeSideBox(1)
-    interval = setInterval(changeSideBox,500,1)
-    displayMessages()
-}
-
+    changeSideBox(1);
+    
+    interval = setInterval(changeSideBox, 500, 1);
+    
+    await displayMessages();
+};
