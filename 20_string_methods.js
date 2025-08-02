@@ -53,3 +53,6 @@ console.log(e.trim())
 // ----------> Strings are IMMUTABLE in Js
 
 a[2] = 'B' // Donot changes anything
+
+// but the varible can be reassigned
+a = "Alok"    // changes a
